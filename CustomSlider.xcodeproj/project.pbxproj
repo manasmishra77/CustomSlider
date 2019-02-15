@@ -14,6 +14,7 @@
 		B680136A2215E80C00706330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B68013682215E80C00706330 /* LaunchScreen.storyboard */; };
 		B68013752215E80C00706330 /* CustomSliderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68013742215E80C00706330 /* CustomSliderTests.swift */; };
 		B68013802215E80C00706330 /* CustomSliderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680137F2215E80C00706330 /* CustomSliderUITests.swift */; };
+		B680138E2215E84C00706330 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B680138D2215E84C00706330 /* CustomSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B680137B2215E80C00706330 /* CustomSliderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSliderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B680137F2215E80C00706330 /* CustomSliderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderUITests.swift; sourceTree = "<group>"; };
 		B68013812215E80C00706330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B680138D2215E84C00706330 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				B680135F2215E80B00706330 /* AppDelegate.swift */,
 				B68013612215E80B00706330 /* ViewController.swift */,
+				B680138D2215E84C00706330 /* CustomSlider.swift */,
 				B68013632215E80B00706330 /* Main.storyboard */,
 				B68013662215E80C00706330 /* Assets.xcassets */,
 				B68013682215E80C00706330 /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B68013622215E80B00706330 /* ViewController.swift in Sources */,
+				B680138E2215E84C00706330 /* CustomSlider.swift in Sources */,
 				B68013602215E80B00706330 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,8 +437,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AQ6PMKC8S6;
+				DEVELOPMENT_TEAM = SYLNKVDPN7;
 				INFOPLIST_FILE = CustomSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,8 +456,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = AQ6PMKC8S6;
+				DEVELOPMENT_TEAM = SYLNKVDPN7;
 				INFOPLIST_FILE = CustomSlider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
