@@ -44,6 +44,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
+    //Used for programmatically changing slider valuew
     func changeSliderScaleValueTo(scale: CGFloat) {
         guard scale >= 0, scale <= 1 else {return}
         let leading = trackLength*scale
@@ -51,10 +52,21 @@ class ViewController: UIViewController {
         trackFillViewTrailing.constant = (1-scale)
     }
     
+    //Initial setUp of slider
+    func setUpSlider(delegate: SliderViewDelegate, fillColor: UIColor) {
+        self.trackFillView.backgroundColor = fillColor
+        self.delegate = delegate
+    }
+    
+    
+
+}
+
+extension ViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let location = touches.first?.location(in: self.tappableCursorview) else {return}
         if location.x >= 0, location.x <= self.tappableCursorview.frame.maxX {
-          isSlidingEnabled = true
+            isSlidingEnabled = true
         } else {
             isSlidingEnabled = false
         }
@@ -82,7 +94,6 @@ class ViewController: UIViewController {
         delegate?.sliderScaleChangedTo(scale: scale)
         return scale
     }
-
 
 }
 
